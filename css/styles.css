@@ -1,3 +1,4 @@
+/* Не знаю, чи потрібно було все форматування обнулят перед початком роботи, тому захайдив цю частину.  */
 /* * {
     margin: 0;
     padding: 0;
@@ -29,12 +30,20 @@
     list-style: none;
 }
 
+.logo-one,
+.link,
+.text,
+.subject {
+    text-decoration: none;
+}
+
 .logo-one {
     font-family: Raleway, sans-serif;
     font-size: 18px;
     line-height: 1.33;
     text-align: left;
     letter-spacing: 0.03em;
+    text-transform: uppercase;
 }
 
 .page-header .logo-one {
@@ -144,7 +153,7 @@
 .section-item .subject {
     font-weight: 600;
     font-size: 20px;
-    text-align: center;
+    text-align: left;
     line-height: 1.2;
 }
 
@@ -152,10 +161,8 @@
     color: var(--slate-color);
 
     line-height: 1.5;
-    text-align: center;
+    text-align: left;
 }
-
-
 
 .page-footer {
     background-color: var(--navy-blue-color);
