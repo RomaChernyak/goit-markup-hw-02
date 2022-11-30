@@ -1,4 +1,4 @@
-/* Не знаю, чи потрібно було все форматування обнулят перед початком роботи, тому захайдив цю частину.  */
+/* Не знаю, чи потрібно було все форматування обнуляти перед початком роботи, тому захайдив цю частину.  */
 /* * {
     margin: 0;
     padding: 0;
@@ -19,7 +19,6 @@
     background-color: #ffffff;
 
     font-family: Roboto, sans-serif;
-    letter-spacing: 0.02em;
 }
 
 .hidden {
@@ -32,24 +31,19 @@
 
 .logo-one,
 .link,
-.text,
-.subject {
+.contact-link {
     text-decoration: none;
 }
 
 .logo-one {
     font-family: Raleway, sans-serif;
+    color: var(--iris-color);
+    font-weight: 700;
     font-size: 18px;
     line-height: 1.33;
     text-align: left;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-}
-
-.page-header .logo-one {
-    color: var(--iris-color);
-    font-weight: 800;
-    text-align: left;
 }
 
 .page-header .logo-two {
@@ -58,9 +52,10 @@
 
 .site-nav .link {
     color: var(--navy-blue-color);
-    font-weight: 600;
+    font-weight: 500;
     line-height: 1.5;
     text-align: left;
+    letter-spacing: 0.02em;
 }
 
 .site-nav .link:hover,
@@ -72,13 +67,16 @@
     color: var(--iris-color);
 }
 
-.support .text {
+.support .contact-link {
     color: var(--slate-color);
+    line-height: 1.5;
+    text-align: left;
+    letter-spacing: 0.02em;
 }
 
-.support .text:hover,
-.support .text:focus,
-.support .text:active {
+.support .contact-link:hover,
+.support .contact-link:focus,
+.support .contact-link:active {
     color: var(--iris-color);
 }
 
@@ -88,17 +86,18 @@
 }
 
 .hero-title {
-    font-weight: 600;
+    font-weight: 500;
     font-size: 56px;
     line-height: 1.07;
     text-align: center;
+    letter-spacing: 0.02em;
 }
 
 .button {
     cursor: pointer;
     
     font-family: inherit;
-    font-weight: 600;
+    font-weight: 500;
     letter-spacing: 0.04em;
 }
 
@@ -119,10 +118,6 @@
     background-color: rgba(64, 75, 191, 1);
 }
 
-.section {
-    background-color: var(--cloud-color);
-}
-
 .filter .button {
     background-color: var(--cloud-color);
     background-color: var(--cornflower-color);
@@ -139,11 +134,16 @@
     color: var(--primary-text-color);
 }
 
+.section {
+    background-color: var(--cloud-color);
+}
+
 .section-title {
-    font-weight: 600;
+    font-weight: 500;
     font-size: 36px;
     line-height: 1.11;
     text-align: center;
+    letter-spacing: 0.02em;
 }
 
 .section-item {
@@ -151,10 +151,11 @@
 }
 
 .section-item .subject {
-    font-weight: 600;
+    font-weight: 500;
     font-size: 20px;
-    text-align: left;
     line-height: 1.2;
+    text-align: left;
+    letter-spacing: 0.02em;
 }
 
 .section-item .text {
@@ -162,16 +163,17 @@
 
     line-height: 1.5;
     text-align: left;
+    letter-spacing: 0.02em;
+}
+
+/* Я додав ще відцентрування в ПІБ та посадах в секції Our team, бо в Figma по ним зазначено: "Align: Center".
+Якщо на даному етапі це не потрібно - я видалю. */
+.section-item .center {
+    text-align: center;
 }
 
 .page-footer {
     background-color: var(--navy-blue-color);
-}
-
-.page-footer .logo-one {
-    color: var(--iris-color);
-    font-weight: 800;
-    text-align: left;
 }
 
 .page-footer .logo-two {
@@ -183,4 +185,5 @@
     
     line-height: 1.5;
     text-align: left;
+    letter-spacing: 0.02em;
 }
